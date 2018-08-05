@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+from shutil import copyfile
 
 
 def main():
@@ -12,17 +13,26 @@ def main():
     # create requirements.txt
     generate_requirements()
 
-def generate_gitignore():
-    pass
+
+def generate_gitignore(dst="."):
+    src = "templates/.gitignore"
+    copyfile(src, dst)
+
 
 def generate_dockerfile():
-    pass
+    src = "templates/Dockerfile"
+    copyfile(src, dst)
+
 
 def generate_dockercompose():
-    pass
+    src = "templates/docker-compose.yml"
+    copyfile(src, dst)
+
 
 def generate_requirements():
-    pass
+    src = "templates/requirements.txt"
+    copyfile(src, dst)
+
 
 if __name__ == "__main__":
     main()
