@@ -2,6 +2,13 @@
 import sys
 
 
-for arg in sys.argv:
-    print(arg)
-    
+def main():
+    # create .gitignore
+
+    # create dockerfile
+    # create docker-compose file
+    # create requirements.txt
+
+if __name__ == "__main__":
+    main()
+
