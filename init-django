@@ -4,10 +4,25 @@ import sys
 
 def main():
     # create .gitignore
-
+    generate_gitignore()
     # create dockerfile
+    generate_dockerfile()
     # create docker-compose file
+    generate_dockercompose()
     # create requirements.txt
+    generate_requirements()
+
+def generate_gitignore():
+    pass
+
+def generate_dockerfile():
+    pass
+
+def generate_dockercompose():
+    pass
+
+def generate_requirements():
+    pass
 
 if __name__ == "__main__":
     main()
